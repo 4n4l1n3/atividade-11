@@ -1,7 +1,6 @@
 import { Router } from "express";
 
 const router = Router();
-app.use(express.json());  
 
   router.get("/usuarios", async (req, res) => {
     console.log("Rota GET/usuarios solicitada");
