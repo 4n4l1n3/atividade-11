@@ -4,14 +4,14 @@ import express from "express";
 
 const app = express();              
 const port = 3000; 
-    
+
 app.use(express.json());             
 app.use(roteadorUsuario);
 dotenv.config();
 
 app.get("/", (req, res) => {        
   res.json({
-    nome: "Analine Almeida e Silva",      
+    nome: "Analine Almeida e Silva: https://github.com/4n4l1n3",      
   });
   console.log("Rota / solicitada");
 });
