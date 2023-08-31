@@ -1,8 +1,16 @@
 import { Router } from "express";
 
+import {
+    selectUsuario,
+    selectUsuarios,
+    insertUsuario,
+    deleteUsuario,
+    updateUsuario,
+  } from "../db/index.js";
+
 const router = Router();
 
-  router.get("/usuarios", async (req, res) => {
+  router.get("/usuario", async (req, res) => {
     console.log(`Rota GET /usuarios solicitada pelo usuario ${req.userId}`);
     try {
       const usuarios = await selectUsuarios();
