@@ -23,8 +23,6 @@ const router = Router();
     }
   });
   
-  app.use(express.json());
-  
   router.post("/usuario", async (req, res) => {
     console.log("Rota POST /usuario solicitada");
     try {
